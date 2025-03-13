@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Swiss Crafts - Tailor Made Luxury",
-  description: "Elevate your experience with Swiss Craft's bespoke luxury coffee machines.",
+  title: "Weyenthal - Tailor Made Luxury",
+  description: "Elevate your experience with Weyenthal's bespoke luxury coffee machines.",
 };
 
 export default function RootLayout({
