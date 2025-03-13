@@ -81,7 +81,8 @@ export default function Contact() {
 
           <div className='bg-[#111111] p-6 rounded-lg border border-gray-800'>
             <h2 className='text-xl font-serif text-white mb-6'>Send Us a Message</h2>
-            <form className='space-y-6'>
+
+            <form className='space-y-6' action='https://formspree.io/f/mldjeyoo' method='POST'>
               <div>
                 <label htmlFor='name' className='block text-sm font-medium text-gray-300 mb-1'>
                   Name
