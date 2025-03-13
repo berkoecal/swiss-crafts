@@ -43,7 +43,7 @@ export default function Contact() {
                     href='mailto:info@weyenthal.com'
                     className='hover:text-[#c4a47c] transition-colors'
                   >
-                    info@weyenthal.com
+                    contact@weyenthal.ch
                   </a>
                 </p>
                 <p className='leading-relaxed'>
