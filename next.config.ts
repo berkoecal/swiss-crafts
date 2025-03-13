@@ -3,7 +3,6 @@ const repoName = "swiss-crafts";
 
 const nextConfig: NextConfig = {
   output: "export",
-  trailingSlash: true,
   basePath: `/${repoName}`,
   assetPrefix: `/${repoName}/`,
 };
