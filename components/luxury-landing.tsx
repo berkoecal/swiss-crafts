@@ -44,7 +44,7 @@ export default function LuxuryLanding() {
         >
           <div className='flex items-center'>
             <Image
-              src='/weyenthal-logo-final.png'
+              src='/logo-black.png'
               alt='Weyenthal Logo'
               width={550}
               height={320}
@@ -109,7 +109,7 @@ export default function LuxuryLanding() {
               <div className='relative overflow-hidden mb-6'>
                 <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
                 <Image
-                  src='/rb-crafts-4.jpg'
+                  src='/custom-4.jpg'
                   alt='Luxury Timepiece'
                   width={800}
                   height={600}
@@ -130,7 +130,7 @@ export default function LuxuryLanding() {
               <div className='relative overflow-hidden mb-6'>
                 <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
                 <Image
-                  src='/rb-crafts-2.jpg'
+                  src='/custom-2.jpg'
                   alt='Luxury Jewelry'
                   width={800}
                   height={600}
@@ -151,7 +151,7 @@ export default function LuxuryLanding() {
               <div className='relative overflow-hidden mb-6'>
                 <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
                 <Image
-                  src='/rb-crafts-1.jpg'
+                  src='/custom-1.jpg'
                   alt='Luxury Accessories'
                   width={800}
                   height={600}
@@ -178,7 +178,7 @@ export default function LuxuryLanding() {
             <div className='flex flex-col md:flex-row items-center gap-4 mb-8 md:mb-0'>
               <div className='flex items-center'>
                 <Image
-                  src='/weyenthal-logo-final.png'
+                  src='/logo-black.png'
                   alt='Weyenthal Logo'
                   width={350}
                   height={100}
