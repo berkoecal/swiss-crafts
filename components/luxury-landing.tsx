@@ -62,7 +62,7 @@ export default function LuxuryLanding() {
         <div className='absolute inset-0 z-0'>
           <div className='absolute inset-0 bg-black/60 z-10'></div>
           <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
-            <source src='/bg-video.mp4' type='video/mp4' />
+            <source src='/bg-video-3.mp4' type='video/mp4' />
           </video>
         </div>
 
@@ -120,8 +120,9 @@ export default function LuxuryLanding() {
                 </div>
               </div>
               <p className='text-gray-300 mb-4 font-light'>
-                Crafted with precision and elegance, our timepieces blend traditional craftsmanship
-                with modern innovation.
+                Where heritage meets prestige. Our bespoke espresso creations seamlessly merge
+                artisanal craftsmanship with contemporary sophistication, delivering a statement
+                piece for the most discerning connoisseurs.
               </p>
             </div>
 
@@ -141,8 +142,9 @@ export default function LuxuryLanding() {
                 </div>
               </div>
               <p className='text-gray-300 mb-4 font-light'>
-                Exquisite jewelry that captures the essence of timeless beauty, handcrafted by
-                master artisans.
+                A symphony of elegance and refinement. Meticulously handcrafted and tailored to
+                perfection, our espresso machines transcend functionality, becoming objets
+                d&apos;art for those who demand the extraordinary.
               </p>
             </div>
 
@@ -162,8 +164,9 @@ export default function LuxuryLanding() {
                 </div>
               </div>
               <p className='text-gray-300 mb-4 font-light'>
-                Meticulously designed accessories that complement your lifestyle with understated
-                sophistication.
+                Uncompromising luxury, redefined. Our meticulously curated espresso collections
+                elevate your lifestyle, ensuring every cup is a testament to your taste, status, and
+                pursuit of perfection.
               </p>
             </div>
           </div>

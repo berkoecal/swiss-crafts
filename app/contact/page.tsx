@@ -9,7 +9,7 @@ export default function Contact() {
         <div className='max-w-6xl mx-auto px-4 flex justify-center md:justify-start'>
           <Link href='/'>
             <Image
-              src='/weyenthal-logo-final.png'
+              src='/logo-white.png'
               alt='Weyenthal Logo'
               width={300}
               height={100}
@@ -29,7 +29,7 @@ export default function Contact() {
               <h2 className='text-xl font-serif text-white mb-4'>Get in Touch</h2>
               <p className='leading-relaxed'>
                 We welcome your inquiries and look forward to assisting you with any questions about
-                our luxury vehicles or services.
+                our luxury crafts.
               </p>
             </section>
 
@@ -50,19 +50,19 @@ export default function Contact() {
                   <strong className='text-[#c4a47c]'>Phone:</strong>
                   <br />
                   <a href='tel:+11234567890' className='hover:text-[#c4a47c] transition-colors'>
-                    +1 (123) 456-7890
+                    +41 43 444 68 14
                   </a>
                 </p>
                 <p className='leading-relaxed'>
                   <strong className='text-[#c4a47c]'>Headquarters:</strong>
                   <br />
-                  Weyenthal Motors
+                  Weyenthal Luxusgueter GmbH
                   <br />
-                  123 Luxury Avenue
+                  Stockerstrasse 38
                   <br />
-                  New York, NY 10001
+                  8002 Zürich
                   <br />
-                  United States
+                  Switzerland
                 </p>
               </div>
             </section>
