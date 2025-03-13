@@ -44,7 +44,7 @@ export default function LuxuryLanding() {
         >
           <div className='flex items-center'>
             <Image
-              src='/logo-black.png'
+              src='/logo-white.png'
               alt='Weyenthal Logo'
               width={550}
               height={320}
