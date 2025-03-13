@@ -177,6 +177,7 @@ export default function LuxuryLanding() {
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='flex flex-col md:flex-row items-center gap-4 mb-8 md:mb-0'>
               <div className='flex items-center'>
+                {/* test */}
                 <Image
                   src='/logo-white.png'
                   alt='Weyenthal Logo'
