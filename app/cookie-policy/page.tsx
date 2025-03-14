@@ -9,7 +9,7 @@ export default function CookiePolicy() {
         <div className='max-w-6xl mx-auto px-4 flex justify-center md:justify-start'>
           <Link href='/'>
             <Image
-              src='/weyenthal-logo-final.png'
+              src='/logo-white.png'
               alt='Weyenthal Logo'
               width={300}
               height={100}
