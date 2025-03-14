@@ -100,7 +100,7 @@ export default function LuxuryLanding() {
       >
         <div className='max-w-7xl mx-auto'>
           <h2 className='font-serif text-3xl md:text-4xl text-center mb-16 text-[#c4a47c]'>
-            Explore our bestsellers
+            A glimpse into our craftsmanship
           </h2>
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12'>
