@@ -97,8 +97,8 @@ export default function CookiePolicy() {
             </p>
             <p className='leading-relaxed mt-4'>
               Email:{" "}
-              <a href='mailto:privacy@weyenthal.com' className='text-[#c4a47c] hover:underline'>
-                privacy@weyenthal.com
+              <a href='mailto:contact@weyenthal.ch' className='text-[#c4a47c] hover:underline'>
+                contact@weyenthal.ch
               </a>
             </p>
           </section>
