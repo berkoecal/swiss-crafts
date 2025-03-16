@@ -77,8 +77,8 @@ export default function LuxuryLanding() {
             </h2>
 
             <p className='max-w-md mx-auto mb-10 text-gray-200 font-light tracking-wide'>
-              Experience luxury reimagined for the modern connoisseur. Where sophistication meets
-              classic elegance.
+              Experience <strong>luxury</strong> reimagined for the modern connoisseur. Where
+              sophistication meets <strong>classic elegance</strong>.
             </p>
 
             {/* CTA Button */}
