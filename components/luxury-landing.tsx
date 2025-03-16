@@ -61,7 +61,14 @@ export default function LuxuryLanding() {
         {/* Video Background with Overlay */}
         <div className='absolute inset-0 z-0'>
           <div className='absolute inset-0 bg-black/60 z-10'></div>
-          <video autoPlay loop muted playsInline className='absolute w-full h-full object-cover'>
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className='absolute w-full h-full object-cover'
+            poster='/bg-video-3-poster.jpg'
+          >
             <source src='/bg-video-3.mp4' type='video/mp4' />
           </video>
         </div>
