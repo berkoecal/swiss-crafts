@@ -73,21 +73,33 @@ export default function LuxuryLanding() {
           >
             {/* Main Content */}
             <h2 className='font-serif text-4xl md:text-6xl lg:text-7xl mb-6 tracking-tight'>
-              Redefining <span className='text-[#c4a47c]'>Elegance</span>
+              Redefining{" "}
+              <span className='text-[#c4a47c] font-bold relative overflow-hidden'>
+                <span className='relative z-10'>Elegance</span>
+                <span
+                  className={`absolute inset-0 bg-gradient-to-r from-transparent via-[#f0d9b5] to-transparent opacity-0 ${
+                    isLoaded ? "animate-spotlight" : ""
+                  }`}
+                ></span>
+              </span>
             </h2>
 
             <p className='max-w-md mx-auto mb-10 text-gray-200 font-light tracking-wide'>
-              Experience <strong>luxury</strong> reimagined for the modern connoisseur. Where
-              sophistication meets <strong>classic elegance</strong>.
+              Experience <span className='font-bold'>luxury</span> reimagined for the modern
+              connoisseur. Where sophistication meets{" "}
+              <span className='font-bold'>classic elegance</span>.
             </p>
 
             {/* CTA Button */}
             <Button
-              className='bg-[#c4a47c] hover:bg-[#d5b78d] text-[#0a0a0a] border-none rounded-none px-8 py-6 group transition-all duration-300'
+              className='relative bg-[#c4a47c] hover:bg-[#d5b78d] text-[#0a0a0a] border-none rounded-none px-8 py-6 group transition-all duration-300 overflow-hidden'
               onClick={scrollToProducts}
             >
-              <span className='mr-2 font-light'>Discover</span>
-              <span className='transition-transform group-hover:translate-y-1'>↓</span>
+              {/* Fancy animation without fixed borders */}
+              <span className='absolute inset-[-2px] bg-gradient-to-r from-transparent via-white/50 to-transparent shine-effect pointer-events-none'></span>
+
+              <span className='relative mr-2 font-light text-m'>Discover now </span>
+              <span className='relative transition-transform group-hover:translate-y-1'>↓</span>
             </Button>
           </div>
         </div>
@@ -105,69 +117,95 @@ export default function LuxuryLanding() {
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12'>
             {/* Product 1 */}
-            <div className='group'>
-              <div className='relative overflow-hidden mb-6'>
-                <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
-                <Image
-                  src='/custom-4.jpg'
-                  alt='Luxury Timepiece'
-                  width={800}
-                  height={600}
-                  className='w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105'
-                />
-                <div className='absolute bottom-0 left-0 right-0 p-6 z-20'>
-                  <h3 className='font-serif text-2xl text-white'></h3>
+            <div className='group relative overflow-hidden'>
+              {/* Fancy border animation - removed outer border */}
+              <span className='absolute inset-0 border border-white/20 scale-[0.98] z-20 pointer-events-none transition-transform duration-700 group-hover:scale-100'></span>
+              <span className='absolute inset-[-2px] bg-gradient-to-r from-transparent via-white/50 to-transparent shine-effect z-10 pointer-events-none'></span>
+
+              <div className='relative bg-[#0a0a0a] p-4 h-full'>
+                <div className='relative overflow-hidden mb-6'>
+                  <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
+                  <Image
+                    src='/custom-4.jpg'
+                    alt='Luxury Timepiece'
+                    width={800}
+                    height={600}
+                    className='w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105'
+                  />
+                  <div className='absolute bottom-0 left-0 right-0 p-6 z-20'>
+                    <h3 className='font-serif text-2xl text-white'></h3>
+                  </div>
                 </div>
+                <h3 className='font-serif text-xl text-[#c4a47c] mb-2'>
+                  Where heritage meets prestige
+                </h3>
+                <p className='text-gray-300 mb-4 font-light'>
+                  Our bespoke espresso creations seamlessly merge artisanal craftsmanship with
+                  contemporary sophistication, delivering a statement piece for the most discerning
+                  connoisseurs.
+                </p>
               </div>
-              <p className='text-gray-300 mb-4 font-light'>
-                Where heritage meets prestige. Our bespoke espresso creations seamlessly merge
-                artisanal craftsmanship with contemporary sophistication, delivering a statement
-                piece for the most discerning connoisseurs.
-              </p>
             </div>
 
             {/* Product 2 */}
-            <div className='group'>
-              <div className='relative overflow-hidden mb-6'>
-                <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
-                <Image
-                  src='/custom-2.jpg'
-                  alt='Luxury Jewelry'
-                  width={800}
-                  height={600}
-                  className='w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105'
-                />
-                <div className='absolute bottom-0 left-0 right-0 p-6 z-20'>
-                  <h3 className='font-serif text-2xl text-white'></h3>
+            <div className='group relative overflow-hidden'>
+              {/* Fancy border animation - removed outer border */}
+              <span className='absolute inset-0 border border-white/20 scale-[0.98] z-20 pointer-events-none transition-transform duration-700 group-hover:scale-100'></span>
+              <span className='absolute inset-[-2px] bg-gradient-to-r from-transparent via-white/50 to-transparent shine-effect z-10 pointer-events-none'></span>
+
+              <div className='relative bg-[#0a0a0a] p-4 h-full'>
+                <div className='relative overflow-hidden mb-6'>
+                  <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
+                  <Image
+                    src='/custom-2.jpg'
+                    alt='Luxury Jewelry'
+                    width={800}
+                    height={600}
+                    className='w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105'
+                  />
+                  <div className='absolute bottom-0 left-0 right-0 p-6 z-20'>
+                    <h3 className='font-serif text-2xl text-white'></h3>
+                  </div>
                 </div>
+                <h3 className='font-serif text-xl text-[#c4a47c] mb-2'>
+                  A symphony of elegance and refinement
+                </h3>
+                <p className='text-gray-300 mb-4 font-light'>
+                  Meticulously handcrafted and tailored to perfection, our espresso machines
+                  transcend functionality, becoming objets d&apos;art for those who demand the
+                  extraordinary.
+                </p>
               </div>
-              <p className='text-gray-300 mb-4 font-light'>
-                A symphony of elegance and refinement. Meticulously handcrafted and tailored to
-                perfection, our espresso machines transcend functionality, becoming objets
-                d&apos;art for those who demand the extraordinary.
-              </p>
             </div>
 
             {/* Product 3 */}
-            <div className='group'>
-              <div className='relative overflow-hidden mb-6'>
-                <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
-                <Image
-                  src='/custom-1.jpg'
-                  alt='Luxury Accessories'
-                  width={800}
-                  height={600}
-                  className='w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105'
-                />
-                <div className='absolute bottom-0 left-0 right-0 p-6 z-20'>
-                  <h3 className='font-serif text-2xl text-white'></h3>
+            <div className='group relative overflow-hidden'>
+              {/* Fancy border animation - removed outer border */}
+              <span className='absolute inset-0 border border-white/20 scale-[0.98] z-20 pointer-events-none transition-transform duration-700 group-hover:scale-100'></span>
+              <span className='absolute inset-[-2px] bg-gradient-to-r from-transparent via-white/50 to-transparent shine-effect z-10 pointer-events-none'></span>
+
+              <div className='relative bg-[#0a0a0a] p-4 h-full'>
+                <div className='relative overflow-hidden mb-6'>
+                  <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
+                  <Image
+                    src='/custom-1.jpg'
+                    alt='Luxury Accessories'
+                    width={800}
+                    height={600}
+                    className='w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105'
+                  />
+                  <div className='absolute bottom-0 left-0 right-0 p-6 z-20'>
+                    <h3 className='font-serif text-2xl text-white'></h3>
+                  </div>
                 </div>
+                <h3 className='font-serif text-xl text-[#c4a47c] mb-2'>
+                  Uncompromising luxury, redefined
+                </h3>
+                <p className='text-gray-300 mb-4 font-light'>
+                  Our meticulously curated espresso collections elevate your lifestyle, ensuring
+                  every cup is a testament to your taste, status, and pursuit of perfection.
+                </p>
               </div>
-              <p className='text-gray-300 mb-4 font-light'>
-                Uncompromising luxury, redefined. Our meticulously curated espresso collections
-                elevate your lifestyle, ensuring every cup is a testament to your taste, status, and
-                pursuit of perfection.
-              </p>
             </div>
           </div>
         </div>
