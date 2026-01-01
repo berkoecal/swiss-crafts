@@ -43,15 +43,13 @@ export default function LuxuryLanding() {
           className={`transition-opacity duration-1000 ${isLoaded ? "opacity-100" : "opacity-0"}`}
         >
           <div className='flex items-center'>
-            <Image
-              src='/logo-white.png'
-              alt='Weyenthal Logo'
-              width={550}
-              height={320}
-              className={`transition-all duration-300 ${
-                isScrolled ? "h-24 w-auto" : "h-48 w-auto"
+            <div
+              className={`relative transition-all duration-300 ${
+                isScrolled ? "h-16 w-24 my-2" : "h-20 w-32"
               }`}
-            />
+            >
+              <Image src='/logo.png' alt='Weyenthal Logo' fill className='object-contain' />
+            </div>
           </div>
         </div>
       </div>
@@ -137,7 +135,7 @@ export default function LuxuryLanding() {
                 <div className='relative overflow-hidden mb-6'>
                   <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
                   <Image
-                    src='/custom-4.jpg'
+                    src='/custom-1.jpg'
                     alt='Luxury Timepiece'
                     width={800}
                     height={600}
@@ -199,7 +197,7 @@ export default function LuxuryLanding() {
                 <div className='relative overflow-hidden mb-6'>
                   <div className='absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-all duration-500'></div>
                   <Image
-                    src='/custom-1.jpg'
+                    src='/custom-3.jpg'
                     alt='Luxury Accessories'
                     width={800}
                     height={600}
@@ -229,14 +227,14 @@ export default function LuxuryLanding() {
           <div className='flex flex-col md:flex-row justify-between items-center'>
             <div className='flex flex-col md:flex-row items-center gap-4 mb-8 md:mb-0'>
               <div className='flex items-center'>
-                {/* test */}
-                <Image
-                  src='/logo-white.png'
-                  alt='Weyenthal Logo'
-                  width={350}
-                  height={100}
-                  className='h-24 w-auto'
-                />
+                <div className='relative h-10 w-16'>
+                  <Image
+                    src='/logo.png'
+                    alt='Weyenthal Logo'
+                    fill
+                    className='object-contain'
+                  />
+                </div>
               </div>
               <div className='text-xs font-light'>
                 © {new Date().getFullYear()} Weyenthal. All rights reserved.
