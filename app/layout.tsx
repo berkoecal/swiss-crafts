@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Weyenthal - Tailor Made Luxury",
+  title: "Weyenthal - Swiss Precision. Timeless Luxury.",
   description: "Elevate your experience with Weyenthal's bespoke luxury coffee machines.",
 };
 

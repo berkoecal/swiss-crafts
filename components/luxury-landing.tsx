@@ -93,15 +93,6 @@ export default function LuxuryLanding() {
 
             {/* Swiss Tagline */}
             <div className='flex items-center justify-center gap-3 mb-8'>
-              <svg
-                className='w-4 h-4'
-                viewBox='0 0 32 32'
-                fill='none'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <rect width='32' height='32' rx='2' fill='#c4a47c' />
-                <path d='M14 6H18V14H26V18H18V26H14V18H6V14H14V6Z' fill='#0a0a0a' />
-              </svg>
               <span className='text-xs uppercase tracking-[0.3em] text-[#c4a47c] font-light'>
                 Swiss Precision. Timeless Luxury.
               </span>
@@ -159,14 +150,16 @@ export default function LuxuryLanding() {
                     <h3 className='font-serif text-2xl text-white'></h3>
                   </div>
                 </div>
-                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>Rosso Levanto & 24K Gold</p>
+                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>
+                  Rosso Levanto & 24K Gold
+                </p>
                 <h3 className='font-serif text-xl text-white mb-3 text-center'>
                   The Crimson Sovereign
                 </h3>
                 <p className='text-gray-400 mb-4 font-light text-sm leading-relaxed text-center'>
-                  Hand-selected Rosso Levanto marble from the quarries of Liguria, its deep burgundy veins
-                  flowing like rivers of wine through ancient stone. Crowned with 24-karat gold accents,
-                  hand-finished by master artisans in our Swiss atelier.
+                  Hand-selected Rosso Levanto marble from the quarries of Liguria, its deep burgundy
+                  veins flowing like rivers of wine through ancient stone. Crowned with 24-karat
+                  gold accents, hand-finished by master artisans in our Swiss atelier.
                 </p>
               </div>
             </div>
@@ -191,14 +184,17 @@ export default function LuxuryLanding() {
                     <h3 className='font-serif text-2xl text-white'></h3>
                   </div>
                 </div>
-                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>Calacatta Gold & 24K Gold</p>
+                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>
+                  Calacatta Gold & 24K Gold
+                </p>
                 <h3 className='font-serif text-xl text-white mb-3 text-center'>
                   The Venetian Grace
                 </h3>
                 <p className='text-gray-400 mb-4 font-light text-sm leading-relaxed text-center'>
-                  Rare Calacatta Gold marble, treasured since the Renaissance for its luminous ivory canvas
-                  and dramatic golden veining. Each slab personally curated from Italian quarries,
-                  paired with hand-polished 24-karat gold fixtures of unparalleled brilliance.
+                  Rare Calacatta Gold marble, treasured since the Renaissance for its luminous ivory
+                  canvas and dramatic golden veining. Each slab personally curated from Italian
+                  quarries, paired with hand-polished 24-karat gold fixtures of unparalleled
+                  brilliance.
                 </p>
               </div>
             </div>
@@ -223,14 +219,17 @@ export default function LuxuryLanding() {
                     <h3 className='font-serif text-2xl text-white'></h3>
                   </div>
                 </div>
-                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>Verde Alpi & 24K Gold</p>
+                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>
+                  Verde Alpi & 24K Gold
+                </p>
                 <h3 className='font-serif text-xl text-white mb-3 text-center'>
                   The Alpine Empress
                 </h3>
                 <p className='text-gray-400 mb-4 font-light text-sm leading-relaxed text-center'>
-                  Majestic Verde Alpi marble, born from the eternal Alps, its serpentine depths echoing
-                  primordial forests frozen in time. Adorned with 24-karat gold detailing, each piece
-                  represents over 200 hours of meticulous handcraft by our master goldsmiths.
+                  Majestic Verde Alpi marble, born from the eternal Alps, its serpentine depths
+                  echoing primordial forests frozen in time. Adorned with 24-karat gold detailing,
+                  each piece represents over 200 hours of meticulous handcraft by our master
+                  goldsmiths.
                 </p>
               </div>
             </div>
@@ -241,8 +240,12 @@ export default function LuxuryLanding() {
       {/* Exclusive Waitlist Section */}
       <section className='relative bg-[#0a0a0a] py-16 px-4 md:px-8'>
         <div className='max-w-xl mx-auto text-center'>
-          <p className='text-[#c4a47c] text-xs uppercase tracking-[0.2em] mb-4'>By Invitation Only</p>
-          <h3 className='font-serif text-xl md:text-2xl mb-6 text-white'>Join Our Exclusive Circle</h3>
+          <p className='text-[#c4a47c] text-xs uppercase tracking-[0.2em] mb-4'>
+            By Invitation Only
+          </p>
+          <h3 className='font-serif text-xl md:text-2xl mb-6 text-white'>
+            Join Our Exclusive Circle
+          </h3>
           <form
             action='https://formspree.io/f/mldjeyoo'
             method='POST'
