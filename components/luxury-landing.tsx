@@ -64,13 +64,11 @@ export default function LuxuryLanding() {
             loop
             muted
             playsInline
-            preload='auto'
-            controls={false}
-            webkit-playsinline='true'
+            preload='metadata'
             className='absolute w-full h-full object-cover'
             poster='/bg-video-3-poster.jpg'
           >
-            <source src='/bg-video-3.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+            <source src='/bg-video-3.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>
         </div>
