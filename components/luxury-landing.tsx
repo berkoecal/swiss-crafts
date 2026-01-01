@@ -9,31 +9,9 @@ export default function LuxuryLanding() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const productsRef = useRef<HTMLDivElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     setIsLoaded(true);
-
-    // Force video play on iOS
-    const playVideo = () => {
-      if (videoRef.current) {
-        videoRef.current.play().catch(() => {
-          // Video play failed - poster image will show as fallback
-        });
-      }
-    };
-
-    // Try to play immediately
-    playVideo();
-
-    // Also try on user interaction (iOS often requires this)
-    const handleInteraction = () => {
-      playVideo();
-      document.removeEventListener("touchstart", handleInteraction);
-      document.removeEventListener("click", handleInteraction);
-    };
-    document.addEventListener("touchstart", handleInteraction, { once: true });
-    document.addEventListener("click", handleInteraction, { once: true });
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -46,8 +24,6 @@ export default function LuxuryLanding() {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener("touchstart", handleInteraction);
-      document.removeEventListener("click", handleInteraction);
     };
   }, []);
 
@@ -84,14 +60,11 @@ export default function LuxuryLanding() {
         <div className='absolute inset-0 z-0'>
           <div className='absolute inset-0 bg-black/60 z-10'></div>
           <video
-            ref={videoRef}
             autoPlay
             loop
             muted
             playsInline
-            preload='metadata'
             className='absolute w-full h-full object-cover'
-            poster='/bg-video-3-poster.jpg'
           >
             <source src='/bg-video-3.mp4' type='video/mp4' />
             Your browser does not support the video tag.
