@@ -236,6 +236,27 @@ export default function LuxuryLanding() {
         </div>
       </section>
 
+      {/* Exclusive Waitlist Section */}
+      <section className='relative bg-[#0a0a0a] py-16 px-4 md:px-8'>
+        <div className='max-w-xl mx-auto text-center'>
+          <p className='text-[#c4a47c] text-xs uppercase tracking-[0.2em] mb-4'>By Invitation Only</p>
+          <h3 className='font-serif text-xl md:text-2xl mb-6 text-white'>Join Our Exclusive Circle</h3>
+          <form className='flex flex-col sm:flex-row gap-3 max-w-sm mx-auto'>
+            <input
+              type='email'
+              placeholder='Your email'
+              className='flex-1 bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder:text-gray-500 font-light focus:outline-none focus:border-[#c4a47c] transition-colors'
+            />
+            <button
+              type='submit'
+              className='bg-[#c4a47c] hover:bg-[#d5b78d] text-[#0a0a0a] px-6 py-3 text-xs uppercase tracking-wider transition-colors'
+            >
+              Request Access
+            </button>
+          </form>
+        </div>
+      </section>
+
       {/* Minimalist Footer inspired by luxury brands */}
       <footer className='bg-[#0a0a0a] text-gray-400 py-6 px-6 md:px-12 border-t border-gray-800'>
         <div className='max-w-7xl mx-auto'>
