@@ -29,11 +29,11 @@ export default function LuxuryLanding() {
     // Also try on user interaction (iOS often requires this)
     const handleInteraction = () => {
       playVideo();
-      document.removeEventListener('touchstart', handleInteraction);
-      document.removeEventListener('click', handleInteraction);
+      document.removeEventListener("touchstart", handleInteraction);
+      document.removeEventListener("click", handleInteraction);
     };
-    document.addEventListener('touchstart', handleInteraction, { once: true });
-    document.addEventListener('click', handleInteraction, { once: true });
+    document.addEventListener("touchstart", handleInteraction, { once: true });
+    document.addEventListener("click", handleInteraction, { once: true });
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -46,8 +46,8 @@ export default function LuxuryLanding() {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      document.removeEventListener('touchstart', handleInteraction);
-      document.removeEventListener('click', handleInteraction);
+      document.removeEventListener("touchstart", handleInteraction);
+      document.removeEventListener("click", handleInteraction);
     };
   }, []);
 
@@ -288,7 +288,7 @@ export default function LuxuryLanding() {
               type='submit'
               className='bg-[#c4a47c] hover:bg-[#d5b78d] text-[#0a0a0a] px-6 py-3 text-xs uppercase tracking-wider transition-colors'
             >
-              Request Access
+              Join Waitlist
             </button>
           </form>
         </div>
