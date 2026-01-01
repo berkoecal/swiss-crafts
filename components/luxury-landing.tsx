@@ -161,13 +161,14 @@ export default function LuxuryLanding() {
                     <h3 className='font-serif text-2xl text-white'></h3>
                   </div>
                 </div>
-                <h3 className='font-serif text-xl text-[#c4a47c] mb-2'>
-                  Where heritage meets prestige
+                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>Rosso Levanto & 24K Gold</p>
+                <h3 className='font-serif text-xl text-white mb-3 text-center'>
+                  The Crimson Sovereign
                 </h3>
-                <p className='text-gray-300 mb-4 font-light'>
-                  Our bespoke espresso creations seamlessly merge artisanal craftsmanship with
-                  contemporary sophistication, delivering a statement piece for the most discerning
-                  connoisseurs.
+                <p className='text-gray-400 mb-4 font-light text-sm leading-relaxed text-center'>
+                  Hand-selected Rosso Levanto marble from the quarries of Liguria, its deep burgundy veins
+                  flowing like rivers of wine through ancient stone. Crowned with 24-karat gold accents,
+                  hand-finished by master artisans in our Swiss atelier.
                 </p>
               </div>
             </div>
@@ -192,13 +193,14 @@ export default function LuxuryLanding() {
                     <h3 className='font-serif text-2xl text-white'></h3>
                   </div>
                 </div>
-                <h3 className='font-serif text-xl text-[#c4a47c] mb-2'>
-                  A symphony of elegance and refinement
+                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>Calacatta Gold & 24K Gold</p>
+                <h3 className='font-serif text-xl text-white mb-3 text-center'>
+                  The Venetian Grace
                 </h3>
-                <p className='text-gray-300 mb-4 font-light'>
-                  Meticulously handcrafted and tailored to perfection, our espresso machines
-                  transcend functionality, becoming objets d&apos;art for those who demand the
-                  extraordinary.
+                <p className='text-gray-400 mb-4 font-light text-sm leading-relaxed text-center'>
+                  Rare Calacatta Gold marble, treasured since the Renaissance for its luminous ivory canvas
+                  and dramatic golden veining. Each slab personally curated from Italian quarries,
+                  paired with hand-polished 24-karat gold fixtures of unparalleled brilliance.
                 </p>
               </div>
             </div>
@@ -223,12 +225,14 @@ export default function LuxuryLanding() {
                     <h3 className='font-serif text-2xl text-white'></h3>
                   </div>
                 </div>
-                <h3 className='font-serif text-xl text-[#c4a47c] mb-2'>
-                  Uncompromising luxury, redefined
+                <p className='text-[#c4a47c] text-xs uppercase tracking-[0.15em] mb-2 text-center'>Verde Alpi & 24K Gold</p>
+                <h3 className='font-serif text-xl text-white mb-3 text-center'>
+                  The Alpine Empress
                 </h3>
-                <p className='text-gray-300 mb-4 font-light'>
-                  Our meticulously curated espresso collections elevate your lifestyle, ensuring
-                  every cup is a testament to your taste, status, and pursuit of perfection.
+                <p className='text-gray-400 mb-4 font-light text-sm leading-relaxed text-center'>
+                  Majestic Verde Alpi marble, born from the eternal Alps, its serpentine depths echoing
+                  primordial forests frozen in time. Adorned with 24-karat gold detailing, each piece
+                  represents over 200 hours of meticulous handcraft by our master goldsmiths.
                 </p>
               </div>
             </div>
@@ -241,10 +245,17 @@ export default function LuxuryLanding() {
         <div className='max-w-xl mx-auto text-center'>
           <p className='text-[#c4a47c] text-xs uppercase tracking-[0.2em] mb-4'>By Invitation Only</p>
           <h3 className='font-serif text-xl md:text-2xl mb-6 text-white'>Join Our Exclusive Circle</h3>
-          <form className='flex flex-col sm:flex-row gap-3 max-w-sm mx-auto'>
+          <form
+            action='https://formspree.io/f/mldjeyoo'
+            method='POST'
+            className='flex flex-col sm:flex-row gap-3 max-w-sm mx-auto'
+          >
+            <input type='hidden' name='subject' value='Waitlist Signup' />
             <input
               type='email'
+              name='email'
               placeholder='Your email'
+              required
               className='flex-1 bg-transparent border border-white/20 px-4 py-3 text-sm text-white placeholder:text-gray-500 font-light focus:outline-none focus:border-[#c4a47c] transition-colors'
             />
             <button
