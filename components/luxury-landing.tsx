@@ -93,6 +93,22 @@ export default function LuxuryLanding() {
               </span>
             </h2>
 
+            {/* Swiss Tagline */}
+            <div className='flex items-center justify-center gap-3 mb-8'>
+              <svg
+                className='w-4 h-4'
+                viewBox='0 0 32 32'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <rect width='32' height='32' rx='2' fill='#c4a47c' />
+                <path d='M14 6H18V14H26V18H18V26H14V18H6V14H14V6Z' fill='#0a0a0a' />
+              </svg>
+              <span className='text-xs uppercase tracking-[0.3em] text-[#c4a47c] font-light'>
+                Swiss Precision. Timeless Luxury.
+              </span>
+            </div>
+
             <p className='max-w-md mx-auto mb-10 text-gray-200 font-light tracking-wide'>
               Experience <span className='font-bold'>luxury</span> reimagined for the modern
               connoisseur. Where sophistication meets{" "}
@@ -228,13 +244,20 @@ export default function LuxuryLanding() {
             <div className='flex flex-col md:flex-row items-center gap-4 mb-8 md:mb-0'>
               <div className='flex items-center'>
                 <div className='relative h-10 w-16'>
-                  <Image
-                    src='/logo.png'
-                    alt='Weyenthal Logo'
-                    fill
-                    className='object-contain'
-                  />
+                  <Image src='/logo.png' alt='Weyenthal Logo' fill className='object-contain' />
                 </div>
+              </div>
+              <div className='flex items-center gap-2 text-xs font-light'>
+                <svg
+                  className='w-3 h-3'
+                  viewBox='0 0 32 32'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <rect width='32' height='32' rx='2' fill='#FF0000' />
+                  <path d='M14 6H18V14H26V18H18V26H14V18H6V14H14V6Z' fill='white' />
+                </svg>
+                <span className='uppercase tracking-wider'>Swiss Made</span>
               </div>
               <div className='text-xs font-light'>
                 © {new Date().getFullYear()} Weyenthal. All rights reserved.
